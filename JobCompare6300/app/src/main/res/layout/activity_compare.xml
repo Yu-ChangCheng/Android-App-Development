@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:screenOrientation="landscape"
+    tools:context="edu.gatech.seclass.jobcompare6300.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/titleHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/GT_GOLD"
+            android:text="Job Comparison"
+            android:textAlignment="center"
+            android:textColor="@color/GT_NAVY"
+            android:textSize="48sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="274dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/j1_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0sp"
+                    android:text="Software Engineer"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/j1_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40sp"
+                    android:text="J and J Ventures Gaming LLC"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/j1_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40sp"
+                    android:text="Effingham, IL"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="220sp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="40sp"
+                        android:text="Adj. Yearly Salary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/j1_salary"
+                        android:layout_width="198dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20sp"
+                        android:text="$120, 700/yr"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="40sp"
+                        android:text="Yearly Bonuses"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/j1_bonus"
+                        android:layout_width="198dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20sp"
+                        android:text="$1,300/yr"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="40sp"
+                        android:text="Leave (days)"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/j1_leave"
+                        android:layout_width="198dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20sp"
+                        android:text="20 days"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="40sp"
+                        android:text="Parental Leave (days)"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/j1_pLeave"
+                        android:layout_width="198dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20sp"
+                        android:text="20 days"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="40sp"
+                        android:text="Life Insurance %"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/j1_lifeInsur"
+                        android:layout_width="198dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20sp"
+                        android:text="5%"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="40sp"
+                        android:text="Overall Score"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/j1_score"
+                        android:layout_width="198dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20sp"
+                        android:text="98"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/j2_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0sp"
+                    android:text="Software Engineer"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/j2_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40sp"
+                    android:text="J and J Ventures Gaming LLC"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/j2_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40sp"
+                    android:text="Effingham, IL"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="40sp"
+                        android:text="Adj. Yearly Salary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/j2_salary"
+                        android:layout_width="198dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20sp"
+                        android:text="$120, 700/yr"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="40sp"
+                        android:text="Yearly Bonuses"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/j2_bonus"
+                        android:layout_width="198dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20sp"
+                        android:text="$1,300/yr"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="40sp"
+                        android:text="Leave (days)"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/j2_leave"
+                        android:layout_width="198dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20sp"
+                        android:text="20 days"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="40sp"
+                        android:text="Parental Leave (days)"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/j2_pLeave"
+                        android:layout_width="198dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20sp"
+                        android:text="20 days"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="40sp"
+                        android:text="Life Insurance %"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/j2_lifeInsur"
+                        android:layout_width="198dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20sp"
+                        android:text="5%"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="40sp"
+                        android:text="Overall Score"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/j2_score"
+                        android:layout_width="198dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20sp"
+                        android:text="98"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/backToJobListButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/GT_NAVY"
+            android:onClick="onClick"
+            android:text="Back to Job Offers"
+            android:textColor="#B3A369" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gatech.seclass.jobcompare6300.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/weights_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/GT_GOLD"
+            android:text="Current Job Details"
+            android:textAlignment="center"
+            android:textColor="@color/GT_NAVY"
+            android:textSize="40sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="54dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EDEDED"
+            android:paddingLeft="10sp"
+            android:paddingTop="30sp"
+            android:text="Job Title"
+
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/curJobTitleId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EDEDED"
+            android:paddingLeft="10sp"
+            android:paddingTop="30sp"
+            android:text="Company"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/curCompanyId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:paddingTop="30sp"
+            android:text="Location"
+            android:background="#EDEDED"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/curCityId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="City"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/curStateId"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="State"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:paddingTop="30sp"
+            android:text="Cost Of Living"
+            android:background="#EDEDED"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/curCOLId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:paddingTop="30sp"
+            android:text="Yearly Salary"
+            android:background="#EDEDED"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/curYearSalaryId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:paddingTop="30sp"
+            android:text="Yearly Bonus"
+            android:background="#EDEDED"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/curYearBonusId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:paddingTop="30sp"
+            android:text="Leave"
+            android:background="#EDEDED"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/curLeaveId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:paddingTop="30sp"
+            android:text="Parental Leave"
+            android:background="#EDEDED"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/curParentalLeaveId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:paddingTop="30sp"
+            android:text="Life Insurance Percentage"
+            android:background="#EDEDED"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/curLifeInsuranceId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/curSaveCurrentJobId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#003057"
+            android:text="Save Current Job"
+            android:textColor="#B3A369" />
+
+        <Button
+            android:id="@+id/curCancelId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#003057"
+            android:text="Cancel"
+            android:textColor="#B3A369" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

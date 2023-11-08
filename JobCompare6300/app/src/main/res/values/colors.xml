@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="GT_GOLD">#B3A369</color>
+    <color name="GT_NAVY">#003057</color>
+    <color name="GREEN_HIGHLIGHT">#5C7139</color>
+    <color name="GREY_TEXT">#AAA</color>
+    <color name="GREY_BACKGROUND">#555</color>
+    <color name="GOLD_BACKGROUND">#D6CBAD</color>
+    <color name="JOB_BACKGROUND">#EDEDED</color>
+</resources>

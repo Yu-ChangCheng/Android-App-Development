@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.gatech.seclass.jobcompare6300.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/weights_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/GT_GOLD"
+            android:text="Adjust Comparison Settings"
+            android:textAlignment="center"
+            android:textColor="@color/GT_NAVY"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#39003057"
+            android:text="Assign each category a weight 1-5, with 5 being the most important and 1 the least important."
+            android:textAlignment="center"
+            tools:layout_editor_absoluteY="100dp" />
+
+        <ScrollView
+            android:layout_width="409dp"
+            android:layout_height="676dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="54dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EDEDED"
+                    android:paddingLeft="10sp"
+                    android:paddingTop="30sp"
+                    android:text="Yearly Salary"
+
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editYearlySalaryWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:text="1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EDEDED"
+                    android:paddingLeft="10sp"
+                    android:paddingTop="30sp"
+                    android:text="Yearly Bonus"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editYearlyBonusWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:text="1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EDEDED"
+                    android:paddingLeft="10sp"
+                    android:paddingTop="30sp"
+                    android:text="Leave"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editLeaveWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:text="1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EDEDED"
+                    android:paddingLeft="10sp"
+                    android:paddingTop="30sp"
+                    android:text="Parental Leave"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editpLeaveWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:text="1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EDEDED"
+                    android:paddingLeft="10sp"
+                    android:paddingTop="30sp"
+                    android:text="Life Insurance"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editLifeInsWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:text="1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/buttonSaveWeights"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/GT_NAVY"
+                    android:text="Save Weights"
+                    android:onClick="onClick"
+                    android:textColor="@color/GT_GOLD" />
+
+                <Button
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/GT_NAVY"
+                    android:text="Cancel"
+                    android:onClick="onClick"
+                    android:textColor="@color/GT_GOLD" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
